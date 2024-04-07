@@ -57,11 +57,11 @@ let removeItem = async () => {
         {
             message: "Enter The 'index no' of the list you want to Remove:",
             type: "number",
-            name: "indexOne",
+            name: "index",
         }
     ]);
-    let deleteItem = todoList.splice(removeList.indexOne - 1, 1);
-    console.log(`\n ${deleteItem} This Item Remove Successfully `);
+    let deleteItem = todoList.splice(removeList.index - 1, 1);
+    console.log(`\n ${deleteItem} This Item Remove Successfully\n`);
 }
 let updateItem = async () => {
     await viewList()
@@ -69,7 +69,7 @@ let updateItem = async () => {
         {
             message: "Enter Index No.",
             type: "number",
-            name:"update",
+            name:"index",
             // choices: todoList.map(item => item)
         },
         {
@@ -81,15 +81,13 @@ let updateItem = async () => {
     ]);
     
     
-    // let replace = todoList.filter(val =>val !== updateList.update, 1);
-    todoList[updateList_task_index.update - 1] = updateList_task_index.putItem_task
-    console.log(`\n Task at index No. ${updateList_task_index.update - 1} Successfully Updated [for updated list check option: "view"]`);
+       todoList[updateList_task_index.index - 1] = updateList_task_index.putItem_task 
+    console.log(`\n Task at index No. ${updateList_task_index.index} Successfully Updated [for updated list check option: "view"]`);
    
 }
 first();
 
 
-// }
 
 // let fruitList = ["apple", "Mango", "Banana"]
 // fruitList.push("Orange")

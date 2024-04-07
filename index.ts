@@ -73,7 +73,7 @@ let updateItem = async () => {
             // choices: todoList.map(item => item)
         },
         {
-                message: "what would you want to Update in your todo?",
+                message: "what would you want to Update in Your todo?",
                 type: "input",
                 name: "putItem_task",
     

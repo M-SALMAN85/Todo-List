@@ -87,26 +87,7 @@ let updateItem = async () => {
    
 }
 first();
-// while(condition)
-//     {
-//         let addTask = await inquirer.prompt(
-//             [
-//                 {
-//                     name: 'todo',
-//                     type: 'input',
-//                     message: "what would you want to add in your todos?" 
-//                 },
-//                 {
-//                     name: 'addMore',
-//                     type: 'confirm',
-//                     message: "do you want add more?", 
-//                     default: "true"
-//                 }
-//             ]
-//         );
-// todos.push(addTask.todo);
-// console.log(todos)
-// condition = addTask.addMore;
+
 
 // }
 
